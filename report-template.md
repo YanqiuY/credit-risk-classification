@@ -5,13 +5,13 @@
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
 * Explain the purpose of the analysis.
-  The purpose of the analysis is by using predictive models that are trained on past data to help track borrowers' credit to identify any changes in their credit risk profile.
+  * The purpose of the analysis is by using predictive models that are trained on past data to help track borrowers' credit to identify any changes in their credit risk profile.
 * Explain what financial information the data was on, and what you needed to predict.
-  The financial data is about lending data, which shows the detail of loan information like loan size, borrower income, loan status, and etc. What I need to predict is creditworthiness of borrowers based on their loan status.
+  * The financial data is about lending data, which shows the detail of loan information like loan size, borrower income, loan status, and etc. What I need to predict is creditworthiness of borrowers based on their loan status.
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-  The variables information is a value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting. Value_counts shows that there are 75036 healthy loans and 2500 high risk loans in this dataset.
+  * The variables information is a value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting. Value_counts shows that there are 75036 healthy loans and 2500 high risk loans in this dataset.
 * Describe the stages of the machine learning process you went through as part of this analysis.
-  At the beginning, splliting the data into two parts: training and testing group. Then creating X and y variables. Using `train_test_splitthe` data to divide the data, and creating a logistic regression model with the original data and fit it by using the training data. Making predictions next and evaluate models' performance by calculating the accuracy score, generating a confusion matrix, and printing a classification report.
+  * At the beginning, splliting the data into two parts: training and testing group. Then creating X and y variables. Using `train_test_splitthe` data to divide the data, and creating a logistic regression model with the original data and fit it by using the training data. Making predictions next and evaluate models' performance by calculating the accuracy score, generating a confusion matrix, and printing a classification report.
 
 After that, using a resampled training data to predict logistic regression model via the RandomOverSampler module and repeating the former steps.
 
