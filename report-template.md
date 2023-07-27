@@ -12,7 +12,7 @@ In this section, describe the analysis you completed for the machine learning mo
   * The variables information is a value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting. Value_counts shows that there are 75036 healthy loans and 2500 high risk loans in this dataset.
 * Describe the stages of the machine learning process you went through as part of this analysis.
   * At the beginning, splliting the data into two parts: training and testing group. Then creating X and y variables. Using `train_test_splitthe` data to divide the data, and creating a logistic regression model with the original data and fit it by using the training data. Making predictions next and evaluate models' performance by calculating the accuracy score, generating a confusion matrix, and printing a classification report.
-  * After that, using a resampled training data to predict logistic regression model via the RandomOverSampler module and repeating the former steps.
+  * After that, using a resampled training data to predict logistic regression model via the `RandomOverSampler` module and repeating the former steps.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
   * Using `RandomOverSampler` method to resample the data, and then using the `LogisticRegression`classifier and the resampled data to fit the model and make predictions.
 
